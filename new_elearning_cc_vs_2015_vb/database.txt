@@ -1,0 +1,38 @@
+﻿
+create database elearningccdb;
+
+use elearningccdb;
+
+create table regusers
+(
+	fullname varchar(100),
+	emailid varchar(50),
+	mobileno varchar(15),
+	qualification varchar(40),
+	profession varchar(50),
+	userid varchar(30) primary key,
+	upassword varchar(20),
+	secque varchar(100),
+	answer varchar(50),
+	status varchar(30)
+);
+
+create table videolectures
+(
+	srno int(5) Primary key auto_increment,
+	subject varchar(20),
+	topic varchar(50),
+	videoname varchar(100)
+);
+     
+create table pdflectures
+(
+	srno int(5) Primary key auto_increment,
+	subject varchar(20),
+	topic varchar(50),
+	pdfname varchar(100)
+);
+
+
+
+

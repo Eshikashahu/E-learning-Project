@@ -1,0 +1,34 @@
+﻿<%@ Master Language="VB" CodeFile="start.master.vb" Inherits="start" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="responsive_menu/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="position: absolute; left: 0px; top: 0px; height: 230px; width: 100%">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <h1>E-Learning With Cloud Computing</h1>
+                <ul class="menu">
+                    <!--<li><a href="home.aspx" class="active">Home</a></li>-->
+                    <li><a href="home.aspx">Home</a></li>
+                    <li><a href="search.aspx">Search</a></li>
+                    <li><a href="regfrm.aspx">Register</a></li>
+                    <li><a href="login.aspx">Login</a></li>
+                    <li><a href="contactus.aspx">Contact</a></li>
+                    <li class="slider"></li>
+                </ul>
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div style="position: absolute; left: 0px; top: 231px; height: auto; width: 100%">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">               
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" CodeFile="admin.master.vb" Inherits="admin_admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="position:absolute;width:250px;top:0px;left:0px;height:auto">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <table style="text-align:center">
+                    <tr>
+                        <td>
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/images/admin.jpg" Width="240px" /></td>
+                    </tr>
+                </table>
+                <br />
+                <table>
+                    <tr>
+                        <td>
+                            <asp:Button ID="BtnViewRegusers" runat="server" Text="Reg. Users" BackColor="#2C3E50" BorderColor="#2C3E50" CausesValidation="False" Font-Names="Arial" Font-Size="Medium" ForeColor="White" Height="40px" Width="240px" /></td>                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="BtnLogout" runat="server" Text="Logout" BackColor="#2C3E50" BorderColor="#2C3E50" CausesValidation="False" Font-Names="Arial" Font-Size="Medium" ForeColor="White" Height="40px" Width="240px" /></td>                        
+                    </tr>
+                </table>
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div style="position:absolute;width:80%;top:0px;left:251px;height:100px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <table>
+                    <tr>
+                        <td>
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/banner_admin.jpg" /></td>
+                    </tr>
+                </table>
+            </asp:ContentPlaceHolder>
+        </div>
+         <div style="position:absolute;width:80%;top:101px;left:251px;height:auto">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
